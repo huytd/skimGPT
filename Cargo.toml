@@ -1,0 +1,18 @@
+[package]
+name = "skimGPT"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "skim"
+path = "src/main.rs"
+
+[dependencies]
+async-openai = "0.9.4"
+tokio = { version = "1.26.0", features = ["full"] }
+html2text = "0.2.1"
+reqwest = "*"
+termimad = "0.20"
+
